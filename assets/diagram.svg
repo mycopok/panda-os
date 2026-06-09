@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 360" font-family="ui-monospace,monospace">
+  <rect width="980" height="360" rx="14" fill="#0c0f0d"/>
+  <rect x="1" y="1" width="978" height="358" rx="14" fill="none" stroke="#243024"/>
+  <style>
+    .box{fill:#11160f;stroke:#243024;stroke-width:1.5;rx:10}
+    .gbox{fill:#0f2b1c;stroke:#2f4d33}
+    .t{fill:#e8f0e6;font-size:14px;font-weight:600}
+    .s{fill:#86977f;font-size:11px}
+    .g{fill:#39ff9e;font-size:11px}
+    .arr{stroke:#2bdc7f;stroke-width:2;fill:none;marker-end:url(#a)}
+    .arr2{stroke:#3a5; stroke-width:1.5; fill:none; stroke-dasharray:4 4; marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#2bdc7f"/></marker></defs>
+
+  <text x="28" y="40" fill="#39ff9e" font-size="13" font-weight="700">HOW PANDAOS WORKS</text>
+
+  <!-- row: you -> agent -> tools -> draft -> wallet -->
+  <rect class="box" x="28"  y="150" width="120" height="64" rx="10"/>
+  <text class="t" x="88" y="180" text-anchor="middle">you</text>
+  <text class="s" x="88" y="198" text-anchor="middle">plain english</text>
+
+  <rect class="box gbox" x="208" y="140" width="150" height="84" rx="10"/>
+  <text class="t" x="283" y="170" text-anchor="middle">PandaOS agent</text>
+  <text class="s" x="283" y="188" text-anchor="middle">LLM tool-calling</text>
+  <text class="g" x="283" y="205" text-anchor="middle">+ markdown memory</text>
+
+  <rect class="box" x="418" y="150" width="150" height="64" rx="10"/>
+  <text class="t" x="493" y="178" text-anchor="middle">Base tools</text>
+  <text class="s" x="493" y="196" text-anchor="middle">read-only data</text>
+
+  <rect class="box" x="628" y="150" width="140" height="64" rx="10"/>
+  <text class="t" x="698" y="178" text-anchor="middle">draft action</text>
+  <text class="s" x="698" y="196" text-anchor="middle">never signs</text>
+
+  <rect class="box gbox" x="828" y="150" width="124" height="64" rx="10"/>
+  <text class="t" x="890" y="178" text-anchor="middle">your wallet</text>
+  <text class="g" x="890" y="196" text-anchor="middle">you approve</text>
+
+  <path class="arr" d="M148,182 L206,182"/>
+  <path class="arr" d="M358,182 L416,182"/>
+  <path class="arr" d="M568,182 L626,182"/>
+  <path class="arr" d="M768,182 L826,182"/>
+
+  <!-- scanners -> actions inbox feeding back into the agent -->
+  <rect class="box" x="208" y="40" width="150" height="58" rx="10"/>
+  <text class="t" x="283" y="64" text-anchor="middle">scanners</text>
+  <text class="s" x="283" y="82" text-anchor="middle">run on intervals</text>
+  <rect class="box" x="418" y="40" width="150" height="58" rx="10"/>
+  <text class="t" x="493" y="64" text-anchor="middle">actions inbox</text>
+  <text class="s" x="493" y="82" text-anchor="middle">alerts + recs</text>
+  <path class="arr" d="M358,69 L416,69"/>
+  <path class="arr2" d="M493,98 C493,125 320,120 300,138"/>
+
+  <text x="28" y="300" class="s">tools: Blockscout · GeckoTerminal · DeFiLlama · GoPlus · Dexscreener · Base RPC   ·   non-custodial · open-source · MIT</text>
+  <text x="28" y="324" class="s">lib/agent  ·  lib/cli  ·  lib/interface</text>
+</svg>

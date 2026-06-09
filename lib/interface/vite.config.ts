@@ -1,0 +1,3 @@
+import { defineConfig } from "vite";
+import solid from "vite-plugin-solid";
+export default defineConfig({ plugins:[solid()], server:{ fs:{ allow:[".."] } }, build:{ target:"esnext" }, esbuild:{ target:"esnext" } });

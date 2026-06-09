@@ -1,0 +1,11 @@
+{
+  "name": "@pandaos/agent",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "PandaOS agent core: read-only Base tools, the agent loop, action scanners, and the opportunity-scoring engine.",
+  "scripts": {
+    "test": "node --test engine/*.test.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

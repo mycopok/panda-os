@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vercel
+.env
+.DS_Store
+vercel_token*
+_qa_*
+config.local.js

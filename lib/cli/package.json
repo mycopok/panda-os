@@ -1,0 +1,31 @@
+{
+  "name": "@pandaos/cli",
+  "version": "0.1.0",
+  "description": "PandaOS base-agent: an open-source, non-custodial AI agent terminal for the Base network. Reads your wallet, researches live on-chain data, scores opportunities, and drafts actions you approve.",
+  "type": "module",
+  "bin": {
+    "panda-agent": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "keywords": [
+    "base",
+    "base-mcp",
+    "agent",
+    "ai-agent",
+    "crypto",
+    "defi",
+    "onchain",
+    "pandaos",
+    "web3"
+  ],
+  "homepage": "https://github.com/mycopok/panda-os",
+  "dependencies": {}
+}

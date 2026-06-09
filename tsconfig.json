@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "lib/agent" },
+    { "path": "lib/interface" },
+    { "path": "lib/cli" }
+  ]
+}
